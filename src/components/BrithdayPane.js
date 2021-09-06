@@ -20,7 +20,7 @@ const BirthdayReminder = () => {
                 <span> {birthday.dob}</span>
                 <span> {birthday.age}</span>
                 <button
-                  className="btn border_1"
+                  className="btn btn-primary"
                   onClick={() => handleClearItem(birthday.id)}
                 >
                   Clear Item
@@ -29,7 +29,7 @@ const BirthdayReminder = () => {
             );
           })}
         </ul>
-        <button className="btn submit" onClick={() => setData([])}>
+        <button className="btn btn-info" onClick={() => setData([])}>
           {" "}
           Clear all{" "}
         </button>
